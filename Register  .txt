@@ -1,0 +1,26 @@
+Register  
+<ul>
+        <% if(typeof errors != 'undefined') {%>
+            <% errors.forEach(error=>{ %>
+            <li><%= error.message %></li>
+        <% })%> <% } %>
+ </ul>
+    
+
+Login  
+<ul>
+    <% if(messages.success_msg) { %>
+    <li><%= messages.success_msg %></li>
+    <% } %>
+    </ul>
+
+    <ul>
+        <% if(messages.error){ %>
+            <li><%= messages.error %></li>
+        <% } %>
+    </ul>
+
+Login
+
+Dashboard
+<h1>Hello <%= user %></h1>
